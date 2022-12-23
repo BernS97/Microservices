@@ -9,16 +9,18 @@
 <body>
     <h1>A basic Weather app microservice</h1>
     <p>Enter your details to get weather Info </p>
-    <form action="/weather/" method="post">
+    <form action="/weather" method="post">
         <label for="weatherInput">City name: </label>
         <input type="text" name="cityName" placeholder="Enter name of your city" id="weatherInput">
         <button type="submit">submit</button>
+        <a href="/weather/about">About</a>
     </form>
     <p>Enter your details to get city Info </p>
-    <form action="/city/" method="post">
+    <form action="/city" method="post">
         <label for="cityInput">City name: </label>
         <input type="text" name="cityName" placeholder="Enter name of your city" id="cityInput">
         <button type="submit">submit</button>
+        <a href="/city/about">About</a>
     </form>
 
 </body>

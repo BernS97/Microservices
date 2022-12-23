@@ -2,9 +2,6 @@ const about = require('./services/about');
 const weather = require('./services/weather');
 
 const controllers = {
-    getIndex: (req, res) => {
-        res.sendFile(__dirname + '/html/index.html');
-    },
     getAbout: (req, res) => {
         about.get(req, res, (err, data) => {
             if (err)

@@ -1,5 +1,11 @@
 {% extends  layout %}
 {% block  content %}
-<img src="${imageURL}"><span>${data.weatherDes}</span>
-<div>The weather in  ${data.temperature} degree celsius in ${data.cityName} </div>
+<dl>
+  <dt>Name</dt>
+  <dd>{{name}}</dd>
+  <dt>Description</dt>
+  <dd>{{description}}</dd>
+  <dt>Author</dt>
+  <dd>{{author}}</dd>
+</dl>
 {% endblock %}
