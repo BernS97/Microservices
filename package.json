@@ -1,0 +1,17 @@
+{
+  "name" : "ms_ms",
+  "version": "1.0.0",
+  "description": "Microservice with JavaScript example",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Moritz Seitz",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "axios": "^1.2.1",
+    "nunjucks": "^3.2.3"
+  }
+}
