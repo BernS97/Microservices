@@ -1,0 +1,30 @@
+{% extends  layout %}
+{% block  content %}
+<a href="/"> Back</a>
+<table align = "center">
+  <caption><b>{{data.cityName}}</b></caption>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Region</th>
+    <th>Country</th>
+    <th>Country code</th>
+    <th>Population</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+  </tr>
+  </thead>
+  <tbody id="ActTable">
+    {% for city in data %}
+        <tr>
+            <td>{{city.name}}</td>
+            <td>{{city.region}}</td>
+            <td>{{city.country}}</td>
+            <td>{{city.countryCode}}</td>
+            <td>{{city.population}}</td>
+            <td>{{city.latitude}}</td>
+            <td>{{city.longitude}}</td>
+        </tr>
+    {% endfor %}
+  </tbody>
+{% endblock %}

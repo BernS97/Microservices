@@ -1,0 +1,20 @@
+{
+    "services": [
+        {
+            "baseRoute": "/weather",
+            "port": "3001",
+            "routes":[
+                "/about",
+                "/"
+            ]
+        },
+        {
+            "baseRoute": "/city",
+            "port": "3002",
+            "routes":[
+                "/about",
+                "/"
+            ]
+        }
+    ]
+}

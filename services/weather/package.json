@@ -1,20 +1,17 @@
 {
-  "name": "ms_ms",
+  "name" : "ms_weather",
   "version": "1.0.0",
   "description": "Microservice with JavaScript example",
   "main": "server.js",
   "scripts": {
-    "startGateway": "node server.js",
-    "startAll": "node server.js && node services/weather/server.js"
+    "startWeatherService": "node server.js"
   },
   "keywords": [],
   "author": "Moritz Seitz",
   "dependencies": {
-    "axios": "^1.2.1",
     "body-parser": "^1.20.0",
-    "dockerode": "^3.3.4",
     "express": "^4.18.1",
-    "http-proxy-middleware": "^2.0.6",
+    "axios": "^1.2.1",
     "nunjucks": "^3.2.3"
   }
 }

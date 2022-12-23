@@ -1,10 +1,13 @@
 const express = require("express");
+const bodyParser = require("body-parser")
 const nunjucks = require("nunjucks")
-const proxy = require("./proxy")
+const routes = require('./routes');
 
-const host = "localhost";
-const port = 3000;
+const host = "127.0.0.1";
+const port = 3001;
 const app = express();
+
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(express.json());
 
@@ -13,11 +16,7 @@ nunjucks.configure('templates', {
     express:  app
 });
 
-proxy(app);
-
-app.get('/', (req, res)=>{
-    res.sendFile(__dirname + '/html/index.html');
-});
+routes(app);
 
 app.listen(port, host,() => {
     console.log(`Listening to port http://${host}:${port}`);

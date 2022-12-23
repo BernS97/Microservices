@@ -3,7 +3,7 @@ const apiKey = "6141811a6136148a00133488eadff0fb"
 
 const weather = {
     get: (req, res, callback) => {
-        const url = "https://api.openweathermap.org/data/2.5/weather?q="+ req.body.cityName + "&appid="+apiKey+"&units=celsius"
+        const url = "https://api.openweathermap.org/data/2.5/weather?q="+ req.body.cityName + "&appid="+apiKey+"&units=metric"
         axios.get(url).then((response,)=>{
             if (response.status === 200) {
                 const data = {
