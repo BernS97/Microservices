@@ -1,6 +1,6 @@
 const express = require("express");
 const nunjucks = require("nunjucks")
-const proxy = require("./proxy")
+const proxy = require("./proxy/proxy")
 
 const host = "localhost";
 const port = 3000;
