@@ -1,5 +1,5 @@
-const about = require('./services/about');
-const city = require('./services/city');
+const about = require('./actions/about');
+const city = require('./actions/city');
 
 const controllers = {
     getAbout: (req, res) => {
