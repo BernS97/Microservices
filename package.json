@@ -4,8 +4,7 @@
   "description": "Microservice with JavaScript example",
   "main": "server.js",
   "scripts": {
-    "startGateway": "node server.js",
-    "startAll": "node server.js && node services/weather/server.js"
+    "startGateway": "node server.js"
   },
   "keywords": [],
   "author": "Moritz Seitz",

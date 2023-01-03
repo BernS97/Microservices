@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(express.json());
 
-nunjucks.configure('templates', {
+nunjucks.configure(__dirname+ '/templates', {
     autoescape:  true,
     express:  app
 });
